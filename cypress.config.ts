@@ -6,15 +6,12 @@ export default defineConfig({
       framework: "react",
       bundler: "vite",
     },
-    supportFile: "cypress/support/component.ts", 
-    specPattern: "cypress/component/**/*.cy.{ts,tsx}",
+    specPattern: "cypress/component/**/*.cy.{js,jsx,ts,tsx}",
   },
 
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
-    supportFile: false,
-    baseUrl: "http://localhost:3001",
   },
 });

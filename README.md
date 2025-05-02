@@ -23,33 +23,35 @@ Coming soon — deployed on [Render](https://render.com/)
 
 ## 📂 Project Structure
 
-├── client/ # React frontend
-├── server/ # Node.js/Express backend
-├── cypress/ # Cypress tests
-│ ├── component/ # Component tests (e.g., Quiz.cy.tsx)
-│ ├── e2e/ # End-to-end tests
-│ ├── fixtures/ # Mock data for tests
-│ └── support/ # Cypress support files
-├── public/
-├── src/ # App source code
-│ ├── components/ # Reusable components like <Quiz />
-│ ├── models/ # TypeScript interfaces
-│ ├── services/ # API interactions
-├── vite.config.ts # Vite config
-└── README.md
-
----
+```md
+.
+├── client/ // the client application
+├── cypress/ // Folder for Cypress
+├── component/ // Folder for component tests
+└── Quiz.cy.jsx // Component tests for the Quiz component
+├── e2e/ // Folder for end-to-end tests
+└── quiz.cy.js // End-to-end tests for the Tech Quiz
+├── fixtures/ // Folder for test fixtures
+└── questions.json // Mock data for testing
+└── tsconfig.json
+├── server/ // the server application
+├── .gitignore
+├── cypress.config.ts // Runs the application using imports from lib/
+├── package.json
+├── tsconfig.json
+└── README.md // App description, link to video, setup and usage instructions
+```
 
 ## 🛠️ Installation
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/quiz-app.git
+   git clone https://github.com/anshul1555/quiz-app.git
    cd quiz-app
    ```
-2. Install dependencies
+2. Install dependencies and see the DB
    ```
-   npm install
+   npm install && npm run seed
    ```
 3. Run the app locally
    ```
@@ -59,6 +61,35 @@ Coming soon — deployed on [Render](https://render.com/)
    ```
    npm run cypress
    ```
+
+## 🧩 Component Testing (Quiz.cy.tsx)
+
+- Start Cypress in Component Mode
+
+```
+  npx cypress open --component
+```
+
+- Choose a browser (Chrome, Electron, etc.)
+
+- Select the test file
+
+- cypress/component/Quiz.cy.tsx
+
+- Cypress will launch and mount the React component in isolation.
+
+## 🔁 End-to-End Testing (quiz.cy.ts)
+
+- Make sure your app is running
+  npm run dev
+
+- Start Cypress in E2E mode
+  npx cypress open --e2e
+
+- Choose a browser
+- Select the test file
+- cypress/e2e/quiz.cy.ts
+- Cypress will open your app in a browser and simulate real user behavior.
 
 ## 📚 Technologies Used
 
@@ -76,4 +107,4 @@ Coming soon — deployed on [Render](https://render.com/)
 **Anshul Sharma**
 
 - 📫 [GitHub](https://github.com/Anshul1555)
-- 📧 anshulsharma@gmail.com _(replace with your actual email)_
+- 📧 anshulsharma@gmail.com
