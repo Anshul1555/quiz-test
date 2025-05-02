@@ -1,0 +1,21 @@
+[
+    {
+      "question": "What is the output of print(2 ** 3)?",
+      "answers": [
+        { "text": "6", "isCorrect": false },
+        { "text": "8", "isCorrect": true },
+        { "text": "9", "isCorrect": false },
+        { "text": "12", "isCorrect": false }
+      ]
+    },
+    {
+      "question": "Which language runs in a web browser?",
+      "answers": [
+        { "text": "Python", "isCorrect": false },
+        { "text": "Java", "isCorrect": false },
+        { "text": "JavaScript", "isCorrect": true },
+        { "text": "C++", "isCorrect": false }
+      ]
+    }
+  ]
+  
