@@ -31,13 +31,13 @@ https://github.com/user-attachments/assets/260c4659-5599-48ea-ab84-ba844d258cb8
 .
 ├── client/ // the client application
 ├── cypress/ // Folder for Cypress
-├── component/ // Folder for component tests
-└── Quiz.cy.jsx // Component tests for the Quiz component
-├── e2e/ // Folder for end-to-end tests
-└── quiz.cy.js // End-to-end tests for the Tech Quiz
-├── fixtures/ // Folder for test fixtures
-└── questions.json // Mock data for testing
-└── tsconfig.json
+ ├── component/ // Folder for component tests
+  └── Quiz.cy.jsx // Component tests for the Quiz component
+ ├── e2e/ // Folder for end-to-end tests
+  └── quiz.cy.js // End-to-end tests for the Tech Quiz
+ ├── fixtures/ // Folder for test fixtures
+  └── questions.json // Mock data for testing
+ └── tsconfig.json
 ├── server/ // the server application
 ├── .gitignore
 ├── cypress.config.ts // Runs the application using imports from lib/
