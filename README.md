@@ -17,10 +17,10 @@ A dynamic, browser-based quiz application built with **React**, **TypeScript**, 
 
 ## 🖼️ Walkhrough Video
 
-# End2End test
+### End2End test
  https://github.com/user-attachments/assets/9e9fb77d-40eb-4d4e-82ed-f5fd10a91ca1
 
-# Component Test
+### Component Test
 https://github.com/user-attachments/assets/260c4659-5599-48ea-ab84-ba844d258cb8
 
 ---
